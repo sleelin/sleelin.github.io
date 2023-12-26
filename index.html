@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@Sleelin</title>
+    <link rel="stylesheet" href="./src/index.css"/>
+    <script type="module" src="/src/components"></script>
+</head>
+<body>
+<page-layout>
+    <page-header>
+        <page-logo>
+            <h1>Sam Lee-Lindsay</h1>
+            <h2>Full-Stack Web Developer</h2>
+        </page-logo>
+        <page-nav>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </page-nav>
+        <page-socials href-linkedin="https://www.linkedin.com/in/sleelin/" href-github="https://github.com/sleelin" />
+    </page-header>
+    <page-main>
+        <content-hero id="about">
+            <h3>About</h3>
+            <p>Duis te vis fabulas porttitor a. Iudicabit repudiare iudicabit urbanitas referrentur doming adolescens periculis. Tota verear vidisse hendrerit suas ornatus dictum sit. Qualisque dignissim tibique interpretaris option splendide tota reformidans explicari. Rhoncus sed nostrum utroque adolescens congue veri.</p>
+            <content-carousel>
+                <content-article class="bubble">
+                    <h4>Full Stack</h4>
+                    <p>Means everything from database structure and API design, through to front-end UI with a focus on UX.</p>
+                </content-article>
+                <content-article class="bubble">
+                    <h4>Industry Best Practice</h4>
+                    <p>Get off the high road Summer. We all got pink eye because you wouldn't stop texting on the toilet.</p>
+                </content-article>
+                <content-article class="bubble">
+                    <h4>Cloud or On-Premises</h4>
+                    <p>Meeseeks are not born into this world fumbling for meaning, Jerry! We are created to serve a single purpose, for which we go to any lengths to fulfill.</p>
+                </content-article>
+            </content-carousel>
+        </content-hero>
+        <content-section id="experience">
+            <h3>Experience</h3>
+            <content-article class="job">
+                <h4 slot="title">Full Stack Developer</h4>
+                <h5 slot="subtitle">Independent Contractor for Fluid Legal Services Pty Ltd</h5>
+                <div slot="timestamp">2022 - Present</div>
+                <content-technologies>
+                    <li>Git</li>
+                    <li>AWS</li>
+                    <li>Infrastructure as Code</li>
+                    <li>Docker</li>
+                    <li>OpenAPI</li>
+                    <li>React</li>
+                    <li>Next.JS</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SQL</li>
+                </content-technologies>
+                <p>Cubilia signiferumque comprehensam periculis praesent quo ridiculus. Dis facilisi metus venenatis scripta scripserit risus similique. Autem ancillae dissentiunt mentitum oporteat consequat ornatus tractatos. Idque quot primis dicta facilisi orci curabitur homero fames donec. Ultricies an a ne praesent.</p>
+            </content-article>
+            <content-article class="job">
+                <h4 slot="title">ICT Service Desk Technician</h4>
+                <h5 slot="subtitle">SCEGGS Darlinghurst</h5>
+                <div slot="timestamp">2016 - 2020</div>
+                <content-technologies>
+                    <li>Microsoft 365</li>
+                    <li>Azure</li>
+                    <li>Enterprise Networking</li>
+                    <li>Windows Server</li>
+                    <li>Linux</li>
+                    <li>DHCP</li>
+                    <li>DNS</li>
+                    <li>PHP</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SQL</li>
+                </content-technologies>
+            </content-article>
+            <content-article class="job">
+                <h4 slot="title">Front End Developer</h4>
+                <h5 slot="subtitle">Independent Contractor for Click to Cloud Pty Ltd</h5>
+                <div slot="timestamp">2015 - 2016</div>
+                <content-technologies>
+                    <li>Git</li>
+                    <li>SalesForce</li>
+                    <li>APEX</li>
+                    <li>Gulp</li>
+                    <li>AngularJS</li>
+                    <li>NodeJS</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </content-technologies>
+            </content-article>
+            <content-article class="job">
+                <h4 slot="title">Consultant Developer</h4>
+                <h5 slot="subtitle">Avoka Technologies</h5>
+                <div slot="timestamp">2012 - 2014</div>
+                <content-technologies>
+                    <li>Git</li>
+                    <li>CVS</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>AngularJS</li>
+                    <li>Java</li>
+                    <li>Spring</li>
+                    <li>SOAP</li>
+                    <li>XST</li>
+                </content-technologies>
+            </content-article>
+            <content-article class="job">
+                <h4 slot="title">ICT Support Assistant</h4>
+                <h5 slot="subtitle">SCEGGS Darlinghurst</h5>
+                <div slot="timestamp">2007 - 2012</div>
+                <content-technologies>
+                    <li>Novell Netware</li>
+                    <li>Groupwise</li>
+                    <li>Enterprise Networking</li>
+                </content-technologies>
+            </content-article>
+        </content-section>
+        <content-section id="projects">
+            <h3>Projects</h3>
+        </content-section>
+        <content-section id="contact">
+            <h3>Contact</h3>
+        </content-section>
+    </page-main>
+</page-layout>
+</body>
+</html>
