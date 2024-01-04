@@ -17,8 +17,8 @@
         </page-logo>
         <page-nav>
             <a href="#about">About</a>
-            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
             <a slot="socials" href="https://www.linkedin.com/in/sleelin/" target="_blank">LinkedIn</a>
             <a slot="socials" href="https://github.com/sleelin" target="_blank">GitHub</a>
@@ -43,13 +43,16 @@
                 </content-article>
             </content-carousel>
         </content-hero>
+        <content-section id="projects">
+            <h3>Projects</h3>
+        </content-section>
         <content-section id="experience">
             <h3>Experience</h3>
             <content-article class="job">
                 <h4 slot="title">Full Stack Developer</h4>
                 <h5 slot="subtitle">Independent Contractor for Fluid Legal Services Pty Ltd</h5>
                 <div slot="timestamp">2022 - Present</div>
-                <content-technologies>
+                <content-technologies slot="tags">
                     <li>Git</li>
                     <li>AWS</li>
                     <li>Infrastructure as Code</li>
@@ -67,7 +70,7 @@
                 <h4 slot="title">ICT Service Desk Technician</h4>
                 <h5 slot="subtitle">SCEGGS Darlinghurst</h5>
                 <div slot="timestamp">2016 - 2020</div>
-                <content-technologies>
+                <content-technologies slot="tags">
                     <li>Microsoft 365</li>
                     <li>Azure</li>
                     <li>Enterprise Networking</li>
@@ -80,12 +83,13 @@
                     <li>CSS</li>
                     <li>SQL</li>
                 </content-technologies>
+                <p>Omittam alterum fugit dicam postea est. Nostra vidisse habeo accusata nonumes lacus. Erat vis velit partiendo vidisse cu aliquam vituperatoribus. Sociosqu mus ullamcorper principes sem condimentum. Civibus posse contentiones proin ei an sapien id vituperatoribus referrentur.</p>
             </content-article>
             <content-article class="job">
                 <h4 slot="title">Front End Developer</h4>
                 <h5 slot="subtitle">Independent Contractor for Click to Cloud Pty Ltd</h5>
                 <div slot="timestamp">2015 - 2016</div>
-                <content-technologies>
+                <content-technologies slot="tags">
                     <li>Git</li>
                     <li>SalesForce</li>
                     <li>APEX</li>
@@ -95,12 +99,13 @@
                     <li>HTML</li>
                     <li>CSS</li>
                 </content-technologies>
+                <p>Omittantur montes habitasse suas scelerisque labores. Quem repudiandae singulis non menandri elaboraret utinam theophrastus habitant posse. Sadipscing volumus civibus postulant gravida cras cubilia liber. Definitiones audire viderer nec est utroque volutpat vocibus convallis. Vestibulum nonumy nostra decore ridiculus habitant minim.</p>
             </content-article>
             <content-article class="job">
                 <h4 slot="title">Consultant Developer</h4>
                 <h5 slot="subtitle">Avoka Technologies</h5>
                 <div slot="timestamp">2012 - 2014</div>
-                <content-technologies>
+                <content-technologies slot="tags">
                     <li>Git</li>
                     <li>CVS</li>
                     <li>JavaScript</li>
@@ -112,20 +117,19 @@
                     <li>SOAP</li>
                     <li>XST</li>
                 </content-technologies>
+                <p>Aptent mandamus deseruisse voluptatum tritani porttitor populo intellegebat meliore. Dictas tempus eloquentiam reprimique dicit detraxit eleifend epicuri. Ridens prompta omnesque nisi expetenda ut melius veri mediocrem consetetur. Libero ne inani ridiculus in curae nibh. Sanctus verterem sed integer maluisset fringilla.</p>
             </content-article>
             <content-article class="job">
                 <h4 slot="title">ICT Support Assistant</h4>
                 <h5 slot="subtitle">SCEGGS Darlinghurst</h5>
                 <div slot="timestamp">2007 - 2012</div>
-                <content-technologies>
+                <content-technologies slot="tags">
                     <li>Novell Netware</li>
                     <li>Groupwise</li>
                     <li>Enterprise Networking</li>
                 </content-technologies>
+                <p>Venenatis persius feugiat habitant doming honestatis brute persequeris fabellas. Voluptatum dicunt rutrum vidisse cetero dicat qui leo quam mea. Minim turpis mediocrem posidonium gloriatur auctor sapientem ac sea. Quam et omittantur odio mattis deterruisset contentiones alia. Quo persecuti habemus prodesset sed habemus voluptaria civibus minim.</p>
             </content-article>
-        </content-section>
-        <content-section id="projects">
-            <h3>Projects</h3>
         </content-section>
         <content-section id="contact">
             <h3>Contact</h3>

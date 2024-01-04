@@ -1,4 +1,6 @@
 :root {
+  --header-min-height: 76px;
+  --header-max-height: 86px;
   --color-weight-foreground: 80%;
   --color-weight-header: 95%;
   --color-background: #242424;
