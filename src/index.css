@@ -42,6 +42,27 @@ body {
   }
 }
 
+content-article {
+  #about & {
+    --content-color-fg: white;
+  }
+  
+  #experience & {
+    --header-top-maxi: 76px;
+    --header-top-mini: 68px;
+    --header-color-bg: var(--color-foreground);
+    --header-color-ul: var(--color-primary);
+    --content-color-fg: var(--color-primary);
+    
+    @media (prefers-color-scheme: light) {
+      & {
+        --header-color-bg: var(--color-header);
+        --content-color-bg: white;
+      }
+    }
+  }
+}
+
 @keyframes lineUp {
   0% {
     opacity: 0;
