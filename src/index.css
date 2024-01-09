@@ -1,7 +1,7 @@
 :root {
   --header-min-height: 76px;
   --header-max-height: 86px;
-  --color-weight-foreground: 80%;
+  --color-weight-foreground: 90%;
   --color-weight-header: 95%;
   --color-background: #242424;
   --color-foreground: color-mix(in srgb, var(--color-background) var(--color-weight-foreground), white);
@@ -16,10 +16,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  
   color-scheme: light dark;
   color: var(--color-primary);
-  background-color: var(--color-background);
+  background-color: color-mix(in srgb, var(--color-background) 80%, black);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -42,17 +42,20 @@ body {
   }
 }
 
-content-article {
-  #about & {
+#about {
+  & content-article {
     --content-color-fg: white;
   }
-  
-  #experience & {
-    --header-top-maxi: 76px;
+}
+
+#experience {
+  & content-article {
+    --header-top-maxi: 75px;
     --header-top-mini: 68px;
     --header-color-bg: var(--color-foreground);
     --header-color-ul: var(--color-primary);
     --content-color-fg: var(--color-primary);
+    --content-color-bg-maxi: var(--color-foreground);
     
     @media (prefers-color-scheme: light) {
       & {
@@ -68,11 +71,11 @@ content-article {
     opacity: 0;
     transform: translateY(80%);
   }
-
+  
   20% {
     opacity: 0;
   }
-
+  
   50% {
     opacity: 1;
     transform: translateY(0%);
