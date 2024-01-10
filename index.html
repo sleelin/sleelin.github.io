@@ -43,8 +43,42 @@
                 </content-article>
             </content-carousel>
         </content-hero>
-        <content-section id="projects">
+        <content-section id="projects" class="grid">
             <h3>Projects</h3>
+            <content-article class="bubble">
+                <h4 slot="title">
+                    <a href="https://scimmyjs.github.io" target="_blank">SCIMMY - SCIM m(ade eas)y</a>
+                </h4>
+                <h5 slot="subtitle" class="status active">Active</h5>
+                <content-languages slot="tags">
+                    <li title="JS" value="95">JavaScript</li>
+                    <li title="TS" value="5">TypeScript</li>
+                </content-languages>
+                <p>A SCIM 2.0 library for NodeJS, which aims to make it easier to rapidly implement services that conform to these standards.</p>
+            </content-article>
+            <content-article class="bubble">
+                <h4 slot="title">
+                    <a href="https://github.com/scimmyjs/scimmy-routers" target="_blank">SCIMMY Express Routers</a>
+                </h4>
+                <h5 slot="subtitle" class="status active">Active</h5>
+                <content-languages slot="tags">
+                    <li title="JS" value="95">JavaScript</li>
+                    <li title="TS" value="5">TypeScript</li>
+                </content-languages>
+                <p>A set of express routers that implement the application-level HTTP based SCIM 2.0 protocol</p>
+            </content-article>
+            <content-article class="bubble">
+                <h4 slot="title">
+                    <a href="https://www.sleelin.io/classy-template" target="_blank">Classy! Template</a>
+                </h4>
+                <h5 slot="subtitle" class="status active">Active</h5>
+                <content-languages slot="tags">
+                    <li title="JS" value="60">JavaScript</li>
+                    <li title="HTML" value="20">HTML</li>
+                    <li title="CSS" value="20">CSS</li>
+                </content-languages>
+                <p>Improvements on the default JSDoc template for modern ESM-style source code.</p>
+            </content-article>
         </content-section>
         <content-section id="experience">
             <h3>Experience</h3>

@@ -55,6 +55,34 @@ body {
     content: "";
     mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik02MjAtMTYzIDQ1MC0zMzNsNTYtNTYgMTE0IDExNCAyMjYtMjI2IDU2IDU2LTI4MiAyODJabTIyMC0zOTdoLTgwdi0yMDBoLTgwdjEyMEgyODB2LTEyMGgtODB2NTYwaDI0MHY4MEgyMDBxLTMzIDAtNTYuNS0yMy41VDEyMC0yMDB2LTU2MHEwLTMzIDIzLjUtNTYuNVQyMDAtODQwaDE2N3ExMS0zNSA0My01Ny41dDcwLTIyLjVxNDAgMCA3MS41IDIyLjVUNTk0LTg0MGgxNjZxMzMgMCA1Ni41IDIzLjVUODQwLTc2MHYyMDBaTTQ4MC03NjBxMTcgMCAyOC41LTExLjVUNTIwLTgwMHEwLTE3LTExLjUtMjguNVQ0ODAtODQwcS0xNyAwLTI4LjUgMTEuNVQ0NDAtODAwcTAgMTcgMTEuNSAyOC41VDQ4MC03NjBaIi8+PC9zdmc+");
   }
+  
+  & content-article {
+    --header-color-fg: var(--color-secondary-dark);
+    --content-color-fg: white;
+    
+    @media (prefers-color-scheme: light) {
+      & {
+        --content-color-bg: var(--color-header);
+        --content-color-fg: var(--color-primary);
+      }
+      
+      &::part(article) {
+        outline: 1px solid var(--color-background);
+      }
+    }
+  }
+  
+  & content-languages {
+    --color-heading: inherit;
+    --color-background: var(--color-header);
+    --color-foreground: var(--color-primary);
+    
+    @media (prefers-color-scheme: light) {
+      & {
+        --color-background: #fafafa;
+      }
+    }
+  }
 }
 
 #experience {
