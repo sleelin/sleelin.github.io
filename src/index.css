@@ -5,7 +5,7 @@
   --color-weight-header: 95%;
   --color-background: #242424;
   --color-foreground: color-mix(in srgb, var(--color-background) var(--color-weight-foreground), white);
-  --color-header: color-mix(in srgb, var(--color-background) var(--color-weight-header), white);
+  --color-header: #2f2f2f;
   --color-heading: #c8c7ff;
   --color-link-hover: #45bbfc;
   --color-link-gradient: #646cffaa;
@@ -66,7 +66,7 @@ body {
         --content-color-fg: var(--color-primary);
       }
       
-      &::part(article) {
+      &::part(container) {
         outline: 1px solid var(--color-background);
       }
     }
