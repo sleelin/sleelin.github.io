@@ -45,6 +45,12 @@ body {
 }
 
 #about {
+  & > p {
+    & i, & b, & u {
+      font-size: 1.125em;
+    }
+  }
+  
   & content-article {
     --content-color-fg: white;
   }
