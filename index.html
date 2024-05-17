@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/svg+xml" href="/icon.svg"/>
+    <link rel="modulepreload" href="/src"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@Sleelin</title>
     <script type="module" src="/src"></script>
+    <style>*:not(:defined){display: none}</style>
 </head>
 <body>
     <page-header>
         <page-logo>
+            <img slot="logo" src="/src/assets/face.svg" alt="@Sleelin"/>
             <h1>Sam Lee-Lindsay</h1>
             <h2>Full-Stack Web Developer</h2>
         </page-logo>
