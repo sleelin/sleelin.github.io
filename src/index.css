@@ -28,12 +28,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     --color-primary: #1d1d1d;
@@ -41,6 +35,22 @@ body {
     --color-background: #d5d5d5;
     --color-weight-foreground: 0%;
     --color-weight-header: 40%;
+  }
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+page-logo {
+  --color-border: #787878;
+  --color-foreground: #d5d5d5;
+  --color-background: #c8c7ff;
+  
+  img {
+    border-radius: 50%;
   }
 }
 
