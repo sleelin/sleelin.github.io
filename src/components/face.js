@@ -40,6 +40,18 @@ export class ContentFace extends LitElement {
                 });
             }
         });
+        
+        window.addEventListener("scroll", () => {
+            const logo = document.getElementById("logo");
+            const {height} = document.getElementById("header").getBoundingClientRect();
+            const {bottom} = this.#face.getBoundingClientRect();
+            
+            if ((bottom - height) < 0) {
+                logo.classList.add("show");
+            } else {
+                logo.attributes.removeNamedItem("class");
+            }
+        })
     }
     
     render() {
