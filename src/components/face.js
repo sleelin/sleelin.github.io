@@ -3,6 +3,7 @@ import {customElement, query, queryAsync} from "lit/decorators.js";
 import {unsafeSVG} from "lit/directives/unsafe-svg.js";
 import {until} from "lit/directives/until.js";
 import FaceImage from "../assets/face.png";
+import FaceSVG from "../assets/face.svg";
 
 /**
  * ContentFace element
@@ -41,14 +42,18 @@ export class ContentFace extends LitElement {
             }
         });
         
-        window.addEventListener("scroll", () => {
+        window.addEventListener("scroll", async () => {
+            await this.#pupilLeft;
+            
             const logo = document.getElementById("logo");
             const {height} = document.getElementById("header").getBoundingClientRect();
             const {bottom} = this.#face.getBoundingClientRect();
             
             if ((bottom - height) < 0) {
+                logo.src = FaceSVG;
                 logo.classList.add("show");
             } else {
+                logo.src = FaceImage;
                 logo.removeAttribute("class");
             }
         })
