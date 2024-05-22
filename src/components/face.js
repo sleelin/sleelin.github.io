@@ -49,7 +49,7 @@ export class ContentFace extends LitElement {
             if ((bottom - height) < 0) {
                 logo.classList.add("show");
             } else {
-                logo.attributes.removeNamedItem("class");
+                logo.removeAttribute("class");
             }
         })
     }
