@@ -8,7 +8,7 @@
   --color-header: #2f2f2f;
   --color-heading: #c8c7ff;
   --color-link-hover: #45bbfc;
-  --color-link-gradient: #646cffaa;
+  --color-link-shadow: #646cffaa;
   --color-primary: rgba(255, 255, 255);
   --color-secondary: #646CFF;
   --color-secondary-dark: #020024;
@@ -69,6 +69,9 @@ page-logo {
 }
 
 #about {
+  --color-border: var(--color-foreground);
+  --color-tagline: white;
+  
   & > p {
     & i, & b, & u {
       font-size: 1.125em;
@@ -146,36 +149,5 @@ page-logo {
   
   p:first-of-type {
     text-align: center;
-  }
-}
-
-@keyframes lineUp {
-  0% {
-    opacity: 0;
-    transform: translateY(80%);
-  }
-  
-  20% {
-    opacity: 0;
-  }
-  
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
-@keyframes wave {
-  0%, 40%, 100% {
-    transform: translateY(0)
-  }
-  
-  20% {
-    transform: translateY(-20px)
   }
 }

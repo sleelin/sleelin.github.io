@@ -27,23 +27,21 @@
     </page-header>
     <page-main>
         <content-hero id="about" slot="hero">
-            <h3>About</h3>
-            <content-face slot="face"></content-face>
+            <h3 slot="title">About</h3>
+            <content-face slot="image"></content-face>
             <p>As a full stack web developer with <i>over ten years</i> coding experience, I am <b><i>passionate</i></b> about turning complex problems into <u>comprehensive</u> and <u>elegant</u> solutions for the <b>modern web</b></p>
-            <content-carousel>
-                <content-article class="bubble">
-                    <h4>Full Stack</h4>
-                    <p>Means everything from database structure and API design, through to front-end UI with a focus on UX.</p>
-                </content-article>
-                <content-article class="bubble">
-                    <h4>Industry Best Practice</h4>
-                    <p>Keeping up in this ever-changing field need not be a burden. I always strive to choose the tools, technologies, and frameworks best suited to crafting the solution.</p>
-                </content-article>
-                <content-article class="bubble">
-                    <h4>Cloud or On-Premises</h4>
-                    <p>Whether small or large, I write code to deploy to any environment, to run on any platform, and to scale to meet any level of demand.</p>
-                </content-article>
-            </content-carousel>
+            <content-article slot="feature" class="bubble">
+                <h4>Full Stack</h4>
+                <p>Means everything from database structure and API design, through to front-end UI with a focus on UX.</p>
+            </content-article>
+            <content-article slot="feature" class="bubble">
+                <h4>Industry Best Practice</h4>
+                <p>Keeping up in this ever-changing field need not be a burden. I always strive to choose the tools, technologies, and frameworks best suited to crafting the solution.</p>
+            </content-article>
+            <content-article slot="feature" class="bubble">
+                <h4>Cloud or On-Premises</h4>
+                <p>Whether small or large, I write code to deploy to any environment, to run on any platform, and to scale to meet any level of demand.</p>
+            </content-article>
         </content-hero>
         <content-section id="projects" class="grid">
             <h3 slot="title">Projects</h3>
