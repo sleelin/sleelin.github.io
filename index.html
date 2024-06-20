@@ -30,22 +30,22 @@
             <h3 slot="title">About</h3>
             <content-face slot="image"></content-face>
             <p>As a full stack web developer with <i>over ten years</i> coding experience, I am <b><i>passionate</i></b> about turning complex problems into <u>comprehensive</u> and <u>elegant</u> solutions for the <b>modern web</b></p>
-            <content-article slot="feature" class="bubble">
+            <content-article slot="feature" variant="panel">
                 <h4>Full Stack</h4>
                 <p>Means everything from database structure and API design, through to front-end UI with a focus on UX.</p>
             </content-article>
-            <content-article slot="feature" class="bubble">
+            <content-article slot="feature" variant="panel">
                 <h4>Industry Best Practice</h4>
                 <p>Keeping up in this ever-changing field need not be a burden. I always strive to choose the tools, technologies, and frameworks best suited to crafting the solution.</p>
             </content-article>
-            <content-article slot="feature" class="bubble">
+            <content-article slot="feature" variant="panel">
                 <h4>Cloud or On-Premises</h4>
                 <p>Whether small or large, I write code to deploy to any environment, to run on any platform, and to scale to meet any level of demand.</p>
             </content-article>
         </content-hero>
-        <content-section id="projects" class="grid">
+        <content-section id="projects" variant="grid">
             <h3 slot="title">Projects</h3>
-            <content-article class="bubble">
+            <content-article variant="panel">
                 <h4 slot="title">
                     <a href="https://scimmyjs.github.io" target="_blank">SCIMMY - SCIM m(ade eas)y</a>
                 </h4>
@@ -56,7 +56,7 @@
                 </content-languages>
                 <p>A SCIM 2.0 library for NodeJS, which aims to make it easier to rapidly implement services that conform to these standards.</p>
             </content-article>
-            <content-article class="bubble">
+            <content-article variant="panel">
                 <h4 slot="title">
                     <a href="https://github.com/scimmyjs/scimmy-routers" target="_blank">SCIMMY Express Routers</a>
                 </h4>
@@ -67,7 +67,7 @@
                 </content-languages>
                 <p>A set of express routers that implement the application-level HTTP based SCIM 2.0 protocol</p>
             </content-article>
-            <content-article class="bubble">
+            <content-article variant="panel">
                 <h4 slot="title">
                     <a href="https://www.sleelin.io/classy-template" target="_blank">Classy! Template</a>
                 </h4>
@@ -81,7 +81,7 @@
             </content-article>
             <content-details class="span" variant="grid">
                 <u slot="summary">See More</u>
-                <content-article class="bubble">
+                <content-article variant="panel">
                     <h4 slot="title">
                         <a href="https://bitbucket.org/sleelin/apexify" target="_blank">Apexify</a>
                     </h4>
@@ -91,7 +91,7 @@
                     </content-languages>
                     <p>Translate standard HTML pages into APEX, the SalesForce VisualForce page definition language</p>
                 </content-article>
-                <content-article class="bubble">
+                <content-article variant="panel">
                     <h4 slot="title">
                         <a href="https://bitbucket.org/sleelin/gulp-apexify" target="_blank">Gulp Apexify</a>
                     </h4>
@@ -101,7 +101,7 @@
                     </content-languages>
                     <p>Gulp plugin to translate standard HTML pages into APEX, the SalesForce VisualForce page definition language</p>
                 </content-article>
-                <content-article class="bubble">
+                <content-article variant="panel">
                     <h4 slot="title">
                         <a href="https://bitbucket.org/sleelin/ngmod-stylesheet" target="_blank">ngmod-stylesheet</a>
                     </h4>
@@ -111,7 +111,7 @@
                     </content-languages>
                     <p>Parse streamed JS files for AngularJS modules, emit concatenated contents of all CSS files detected within the module directory</p>
                 </content-article>
-                <content-article class="bubble">
+                <content-article variant="panel">
                     <h4 slot="title">
                         <a href="https://bitbucket.org/sleelin/ngmod-templateurl" target="_blank">ngmod-templateurl</a>
                     </h4>
@@ -121,7 +121,7 @@
                     </content-languages>
                     <p>Parse streamed JS files for templateUrl properties, emit template files with paths matching expected templateUrl</p>
                 </content-article>
-                <content-article class="bubble">
+                <content-article variant="panel">
                     <h4 slot="title">
                         <a href="https://bitbucket.org/sleelin/ngmod-concat" target="_blank">ngmod-concat</a>
                     </h4>
@@ -131,7 +131,7 @@
                     </content-languages>
                     <p>Parse streamed JS files for AngularJS modules, emit single concatenated contents of other files referencing the same module</p>
                 </content-article>
-                <content-article class="bubble">
+                <content-article variant="panel">
                     <h4 slot="title">
                         <a href="https://bitbucket.org/sleelin/ngmod-filterdep" target="_blank">ngmod-filterdep</a>
                     </h4>
@@ -145,7 +145,7 @@
         </content-section>
         <content-section id="experience">
             <h3 slot="title">Experience</h3>
-            <content-article class="job">
+            <content-article variant="job">
                 <h4 slot="title">Full Stack Developer</h4>
                 <h5 slot="subtitle">Independent Contractor for Fluid Legal Services Pty Ltd</h5>
                 <div slot="timestamp">2022 - Present</div>
@@ -166,7 +166,7 @@
                     <u slot="summary">Role Responsibilities</u>
                 </content-details>
             </content-article>
-            <content-article class="job">
+            <content-article variant="job">
                 <h4 slot="title">ICT Service Desk Technician</h4>
                 <h5 slot="subtitle">SCEGGS Darlinghurst</h5>
                 <div slot="timestamp">2016 - 2020</div>
@@ -199,7 +199,7 @@
                     <li>Design and development of custom WordPress theme for use with ad-hoc school websites</li>
                 </content-details>
             </content-article>
-            <content-article class="job">
+            <content-article variant="job">
                 <h4 slot="title">Front End Developer</h4>
                 <h5 slot="subtitle">Independent Contractor for Click to Cloud Pty Ltd</h5>
                 <div slot="timestamp">2015 - 2016</div>
@@ -224,7 +224,7 @@
                     <li>Internal education and training in best-practice use of HTML, CSS, JavaScript, Node.JS, and AngularJS, both generally for web applications, and specifically for project related libraries and frameworks</li>
                 </content-details>
             </content-article>
-            <content-article class="job">
+            <content-article variant="job">
                 <h4 slot="title">Consultant Developer</h4>
                 <h5 slot="subtitle">Avoka Technologies</h5>
                 <div slot="timestamp">2012 - 2014</div>
@@ -256,7 +256,7 @@
                     <li>Planning, design and development work with a team creating a new software solution intended to replace existing company products based on ageing and out-dated technologies and platforms</li>
                 </content-details>
             </content-article>
-            <content-article class="job">
+            <content-article variant="job">
                 <h4 slot="title">ICT Support Assistant</h4>
                 <h5 slot="subtitle">SCEGGS Darlinghurst</h5>
                 <div slot="timestamp">2007 - 2012</div>
