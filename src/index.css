@@ -2,9 +2,9 @@
   --header-min-height: 76px;
   --header-max-height: 86px;
   --color-weight-foreground: 90%;
-  --color-weight-header: 95%;
-  --color-background: #242424;
   --color-foreground: color-mix(in srgb, var(--color-background) var(--color-weight-foreground), white);
+  --color-background: #242424;
+  --color-border: #787878;
   --color-header: #2f2f2f;
   --color-heading: #c8c7ff;
   --color-link-hover: #45bbfc;
@@ -18,24 +18,23 @@
   line-height: 1.5;
   font-weight: 400;
   
-  color-scheme: light dark;
+  color-scheme: only dark;
   color: var(--color-primary);
   background-color: color-mix(in srgb, var(--color-background) 80%, black);
-
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-primary: #1d1d1d;
-    --color-heading: #1a194f;
-    --color-background: #d5d5d5;
-    --color-header: #eeeeee;
+  
+  &.light {
+    color-scheme: only light;
     --color-weight-foreground: 0%;
-    --color-weight-header: 40%;
+    --color-background: #d5d5d5;
+    --color-border: #d5d5d5;
+    --color-header: #eeeeee;
+    --color-heading: #1a194f;
+    --color-primary: #1d1d1d;
   }
 }
 
@@ -43,6 +42,21 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+}
+
+colour-scheme-toggle {
+  position: relative;
+  padding-left: 12px;
+  
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    bottom: 2px;
+    border-left: 1px solid var(--color-border);
+  }
 }
 
 page-logo {
@@ -66,6 +80,10 @@ page-logo {
       filter: brightness(1);
       transform: rotate(360deg);
     }
+  }
+  
+  @media (784px <= width <= 876px) or (max-width: 375px) {
+    font-size: 0.875em;
   }
 }
 
@@ -96,11 +114,9 @@ content-section {
     --header-color-fg: var(--color-secondary-dark);
     --content-color-fg: white;
     
-    @media (prefers-color-scheme: light) {
-      & {
-        --content-color-bg: var(--color-header);
-        --content-color-fg: var(--color-primary);
-      }
+    .light & {
+      --content-color-bg: var(--color-header);
+      --content-color-fg: var(--color-primary);
       
       &::part(container) {
         outline: 1px solid var(--color-background);
@@ -117,10 +133,8 @@ content-section {
     --color-background: var(--color-header);
     --color-foreground: var(--color-primary);
     
-    @media (prefers-color-scheme: light) {
-      & {
-        --color-background: #fafafa;
-      }
+    .light & {
+      --color-background: #fafafa;
     }
   }
 }
@@ -136,11 +150,9 @@ content-section {
     --content-color-fg: var(--color-primary);
     --content-color-bg-maxi: var(--color-foreground);
     
-    @media (prefers-color-scheme: light) {
-      & {
-        --header-color-bg: var(--color-header);
-        --content-color-bg: white;
-      }
+    .light & {
+      --header-color-bg: var(--color-header);
+      --content-color-bg: white;
     }
   }
   
