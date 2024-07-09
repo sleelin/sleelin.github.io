@@ -16,8 +16,10 @@
   --c-cobalite: #9f9fff;
   --c-coconut: #e8eaf6;
   --c-darkgrey: #aaaaaa;
+  --c-darktone: #171717;
   --c-discoball: #d5d5d5;
   --c-eerieblack: #1d1d1d;
+  --c-eclipse: #3f3f3f;
   --c-genie: #646cff;
   --c-gravel: #bbbbbb;
   --c-hadopel: #020024;
@@ -28,6 +30,7 @@
   --c-nero: #242424;
   --c-nightsky: #1a194f;
   --c-quartz: #d0d0e7;
+  --c-sapphire: #6272a4;
   --c-silver: #787878;
   --c-skycap: #282a36;
   --c-snow: #fafafa;
@@ -35,9 +38,9 @@
   
   & {
     color-scheme: only dark;
-    --color-page-header: var(--c-carbon);
-    --color-page-foreground: var(--c-boltgun);
-    --color-page-background: var(--c-nero);
+    --color-page-header: var(--c-ansiblack);
+    --color-page-foreground: var(--c-nero);
+    --color-page-background: var(--c-darktone);
     --color-page-heading: var(--c-lavender);
     --color-content-header: var(--c-skycap);
     --color-content-foreground: var(--c-ansiblack);
@@ -184,6 +187,10 @@ page-main {
     color: var(--color-quaternary);
     transition: color 0.2s ease-in-out;
     
+    @media (max-width: 425px) {
+      justify-content: center;
+    }
+    
     &:hover {
       color: var(--color-quinary);
     }
@@ -205,6 +212,7 @@ page-main {
     --header-stickyTop-sm: 57px;
     --header-borderColor: var(--color-primary);
     --content-bgColor-lg: transparent;
+    --content-bgColor-sm: var(--color-page-foreground);
     
     .light & {
       --container-outlineColor: var(--c-gravel);
