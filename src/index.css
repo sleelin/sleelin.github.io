@@ -248,6 +248,14 @@ page-main {
   }
 }
 
+page-footer {
+  --footer-borderColor-sm: var(--color-border);
+  
+  .light & {
+    --footer-borderColor-sm: var(--c-darkgrey);
+  }
+}
+
 colour-scheme-toggle {
   position: relative;
   padding-left: 12px;
