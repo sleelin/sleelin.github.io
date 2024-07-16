@@ -183,6 +183,11 @@ page-main {
     --container-outlineColor: var(--color-border);
   }
   
+  img {
+    transition: transform 0.2s ease-in-out;
+    transform-origin: center;
+  }
+  
   a {
     color: var(--color-quaternary);
     transition: color 0.2s ease-in-out;
@@ -193,6 +198,10 @@ page-main {
     
     &:hover {
       color: var(--color-quinary);
+      
+      & + img {
+        transform: scale(1.0125);
+      }
     }
     
     & > h4 {
