@@ -105,7 +105,6 @@ page-header {
       filter: brightness(0);
       transform: rotate(0deg);
       transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out, transform 0.4s ease-in-out;
-      border-radius: 50%;
       background-image: url("/src/assets/face.png");
       background-size: contain;
       background-position: center;
@@ -114,6 +113,12 @@ page-header {
         opacity: 1;
         filter: brightness(1);
         transform: rotate(360deg);
+      }
+      
+      @media print {
+        opacity: 1;
+        filter: unset;
+        transition: unset;
       }
     }
     
@@ -174,6 +179,10 @@ page-main {
 
 #projects {
   --title-iconMask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik02MjAtMTYzIDQ1MC0zMzNsNTYtNTYgMTE0IDExNCAyMjYtMjI2IDU2IDU2LTI4MiAyODJabTIyMC0zOTdoLTgwdi0yMDBoLTgwdjEyMEgyODB2LTEyMGgtODB2NTYwaDI0MHY4MEgyMDBxLTMzIDAtNTYuNS0yMy41VDEyMC0yMDB2LTU2MHEwLTMzIDIzLjUtNTYuNVQyMDAtODQwaDE2N3ExMS0zNSA0My01Ny41dDcwLTIyLjVxNDAgMCA3MS41IDIyLjVUNTk0LTg0MGgxNjZxMzMgMCA1Ni41IDIzLjVUODQwLTc2MHYyMDBaTTQ4MC03NjBxMTcgMCAyOC41LTExLjVUNTIwLTgwMHEwLTE3LTExLjUtMjguNVQ0ODAtODQwcS0xNyAwLTI4LjUgMTEuNVQ0NDAtODAwcTAgMTcgMTEuNSAyOC41VDQ4MC03NjBaIi8+PC9zdmc+");
+  
+  @media print {
+    display: none;
+  }
   
   content-details::part(summary) {
     padding-left: 8px;
@@ -242,10 +251,25 @@ page-main {
       }
     }
   }
+  
+  @media print {
+    content-article::part(header) {
+      margin: 0;
+      padding: 8px 0 4px;
+    }
+    
+    content-technologies {
+      display: none;
+    }
+  }
 }
 
 #contact {
   --title-iconMask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik02NDAtMjAwdjgwcTAgMTctMTEuNSAyOC41VDYwMC04MEgxMjBxLTE3IDAtMjguNS0xMS41VDgwLTEyMHYtMzIwcTAtMTcgMTEuNS0yOC41VDEyMC00ODBoMTIwdi0xNjBxMC0xMDAgNzAtMTcwdDE3MC03MGgxNjBxMTAwIDAgMTcwIDcwdDcwIDE3MHY1NjBoLTgwdi0xMjBINjQwWm0wLTgwaDE2MHYtMzYwcTAtNjYtNDctMTEzdC0xMTMtNDdINDgwcS02NiAwLTExMyA0N3QtNDcgMTEzdjE2MGgyODBxMTcgMCAyOC41IDExLjVUNjQwLTQ0MHYxNjBaTTQwMC01NjB2LTgwaDMyMHY4MEg0MDBabS00MCAyNzQgMjAwLTExNEgxNjBsMjAwIDExNFptMCA3MEwxNjAtMzMwdjE3MGg0MDB2LTE3MEwzNjAtMjE2Wk0xNjAtNDAwdjI0MC0yNDBaIi8+PC9zdmc+");
+  
+  @media print {
+    display: none;
+  }
   
   content-section {
     margin: 0 auto;

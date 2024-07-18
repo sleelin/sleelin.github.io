@@ -11,9 +11,16 @@ import DarkURL from "../assets/dark.svg?url";
 export class ColourSchemeToggle extends LitElement {
     constructor() {
         super();
-        this.addEventListener("colorschemechange", (e) => {
-            document.documentElement.classList.toggle("light", e.detail.colorScheme === "light");
-        });
+        
+        const deCL = document.documentElement.classList;
+        
+        // Add or remove the light mode class on toggle
+        this.addEventListener("colorschemechange", (e) => deCL.toggle("light", e.detail.colorScheme === "light"));
+        
+        // Force the light mode on print, then return to user preference
+        window.addEventListener("beforeprint", () => deCL.add("light"));
+        window.addEventListener("afterprint", () => deCL.toggle("light", this.shadowRoot.querySelector("dark-mode-toggle").mode === "light"));
+        
     }
     
     render() {

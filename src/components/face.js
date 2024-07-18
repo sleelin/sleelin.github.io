@@ -7,7 +7,6 @@ import FaceSVG from "../assets/face.svg";
 
 /**
  * ContentFace element
- * @slot - This element has a slot
  */
 @customElement("content-face")
 export class ContentFace extends LitElement {
@@ -23,6 +22,12 @@ export class ContentFace extends LitElement {
     constructor() {
         super();
         
+        // Use PNG face image on print, then return to SVG if necessary
+        window.addEventListener("beforeprint", () => document.getElementById("logo").src = FaceImage);
+        window.addEventListener("afterprint", async () => await this.#handleLogoSource());
+        
+        // Animate and update face image source on scroll
+        window.addEventListener("scroll", async () => this.#handleLogoSource());
         window.addEventListener("mousemove", async (e) => {
             const pupilLeft = await this.#pupilLeft;
             const pupilRight = await this.#pupilRight;
@@ -41,22 +46,22 @@ export class ContentFace extends LitElement {
                 });
             }
         });
+    }
+    
+    async #handleLogoSource() {
+        await this.#pupilLeft;
         
-        window.addEventListener("scroll", async () => {
-            await this.#pupilLeft;
-            
-            const logo = document.getElementById("logo");
-            const {height} = document.getElementById("header").getBoundingClientRect();
-            const {bottom} = this.#face.getBoundingClientRect();
-            
-            if ((bottom - height) < 0) {
-                logo.src = FaceSVG;
-                logo.classList.add("show");
-            } else {
-                logo.src = FaceImage;
-                logo.removeAttribute("class");
-            }
-        })
+        const logo = document.getElementById("logo");
+        const {height} = document.getElementById("header").getBoundingClientRect();
+        const {bottom} = this.#face.getBoundingClientRect();
+        
+        if ((bottom - height) < 0) {
+            logo.src = FaceSVG;
+            logo.classList.add("show");
+        } else {
+            logo.src = FaceImage;
+            logo.removeAttribute("class");
+        }
     }
     
     render() {
