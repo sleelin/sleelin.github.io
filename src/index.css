@@ -1,13 +1,18 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "Roboto Flex", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-synthesis: none;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 115;
   text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --header-min-height: 76px;
-  --header-max-height: 86px;
+  
+  --page-header-offset-min: 63px;
+  --page-header-offset-max: 87px;
   --c-ansiblack: #21222c;
   --c-blue: #0000d4;
   --c-boltgun: #3a3a3a;
@@ -133,6 +138,7 @@ page-main {
   --container-fgColor-sm: var(--color-page-background);
   
   content-section {
+    scroll-margin-top: var(--page-header-offset-min);
     --title-textColor: var(--color-page-heading);
     --title-iconDisplay: block;
     
@@ -159,6 +165,7 @@ page-main {
 }
 
 #about {
+  scroll-margin-top: var(--page-header-offset-max);
   --container-borderColor: var(--color-page-foreground);
   --container-textColor: white;
   
@@ -226,8 +233,8 @@ page-main {
   --title-iconMask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik0xNjAtMjAwdi00NDAgNDQwLTE1IDE1Wm0wIDgwcS0zMyAwLTU2LjUtMjMuNVQ4MC0yMDB2LTQ0MHEwLTMzIDIzLjUtNTYuNVQxNjAtNzIwaDE2MHYtODBxMC0zMyAyMy41LTU2LjVUNDAwLTg4MGgxNjBxMzMgMCA1Ni41IDIzLjVUNjQwLTgwMHY4MGgxNjBxMzMgMCA1Ni41IDIzLjVUODgwLTY0MHYxNzFxLTE4LTEzLTM4LTIyLjVUODAwLTUwOHYtMTMySDE2MHY0NDBoMjgzcTMgMjEgOSA0MXQxNSAzOUgxNjBabTI0MC02MDBoMTYwdi04MEg0MDB2ODBaTTcyMC00MHEtODMgMC0xNDEuNS01OC41VDUyMC0yNDBxMC04MyA1OC41LTE0MS41VDcyMC00NDBxODMgMCAxNDEuNSA1OC41VDkyMC0yNDBxMCA4My01OC41IDE0MS41VDcyMC00MFptMjAtMjA4di0xMTJoLTQwdjEyOGw4NiA4NiAyOC0yOC03NC03NFoiLz48L3N2Zz4=");
   
   content-article {
-    --header-stickyTop-lg: 63px;
-    --header-stickyTop-sm: 57px;
+    --header-stickyTop: var(--page-header-offset-min);
+    --header-stickyTop-sm: calc(var(--page-header-offset-min) - 2px);
     --header-borderColor: var(--color-primary);
     --content-bgColor-lg: transparent;
     --content-bgColor-sm: var(--color-page-foreground);
@@ -274,15 +281,19 @@ page-main {
   content-section {
     margin: 0 auto;
     max-width: 90ch;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     
     &::part(container) {
       font-size: 1rem;
       padding: 0;
     }
     
-    @media (max-width: 768px) {
+    @media (636px < width <= 720px) {
       font-size: 1rem;
+    }
+    
+    @media (578px <= width <= 636px) {
+      font-size: 2rem;
     }
   }
   
@@ -327,8 +338,8 @@ page-main {
       }
     }
     
-    @media (max-width: 860px) {
-      font-size: 0.9em;
+    @media (max-width: 862px) {
+      font-size: 0.75em;
       
       &::part(content) {
         column-gap: 8px;
