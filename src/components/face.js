@@ -2,8 +2,8 @@ import {LitElement, css, html} from "lit";
 import {customElement, query, queryAsync} from "lit/decorators.js";
 import {unsafeSVG} from "lit/directives/unsafe-svg.js";
 import {until} from "lit/directives/until.js";
-import FaceImage from "../assets/face.png";
-import FaceSVG from "../assets/face.svg";
+import FaceImage from "../assets/face.png?url";
+import FaceSVG from "../assets/face.svg?url";
 
 /**
  * ContentFace element
