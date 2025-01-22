@@ -47,9 +47,10 @@
   --c-darktone: #171717;
   --c-discoball: #d5d5d5;
   --c-eerieblack: #1d1d1d;
-  --c-eclipse: #3f3f3f;
+  --c-eclipse: #2e3749;
   --c-genie: #646cff;
   --c-gravel: #bbbbbb;
+  --c-gunmetal: #191f2a;
   --c-hadopel: #020024;
   --c-lavender: #c8c7ff;
   --c-mauve: #d1adf0;
@@ -67,12 +68,12 @@
   & {
     color-scheme: only dark;
     --color-page-header: var(--c-ansiblack);
-    --color-page-foreground: var(--c-nero);
-    --color-page-background: var(--c-darktone);
+    --color-page-foreground: var(--c-gunmetal);
+    --color-page-background: var(--c-eerieblack);
     --color-page-heading: var(--c-lavender);
-    --color-content-header: var(--c-skycap);
+    --color-content-header: var(--c-eclipse);
     --color-content-foreground: var(--c-ansiblack);
-    --color-content-background: var(--c-charcoal);
+    --color-content-background: var(--c-skycap);
     --color-content-heading: white;
     --color-border: var(--c-silver);
     --color-primary: white;
