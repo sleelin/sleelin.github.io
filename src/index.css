@@ -279,7 +279,7 @@ page-main {
     }
     
     content-technologies {
-      margin: -1px -16px 0;
+      margin: 0 -16px;
       
       &::part(title) {
         padding-left: 24px;

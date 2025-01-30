@@ -91,6 +91,7 @@ export class ContentFace extends LitElement {
             max-height: 100%;
             overflow: hidden;
             border-radius: 32px;
+            transform: translateZ(0);
             filter: drop-shadow(0 0 3rem rgb(197, 201, 204));
             animation: 0.3s ease-in-out fadeInFromFaint;
           }
