@@ -1,4 +1,4 @@
-import "@sleelin/portfolito";
+import "portfolito";
 import "./components/face.js";
 import "./components/toggle.js";
 import "https://www.googletagmanager.com/gtag/js?id=G-0ZJCXRJC9S";

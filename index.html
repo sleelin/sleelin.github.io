@@ -64,10 +64,33 @@
                 </a>
                 <img slot="thumb" src="https://scimmyjs.github.io/static/assets/logo.svg" alt="SCIMMY logo" />
                 <content-languages slot="tags">
-                    <li title="JS" value="95">JavaScript</li>
-                    <li title="TS" value="5">TypeScript</li>
+                    <li title="JavaScript" value="95">JS</li>
+                    <li title="TypeScript">TS</li>
                 </content-languages>
-                <p>A SCIM 2.0 library for NodeJS, which aims to make it easier to rapidly implement services that conform to these standards.</p>
+                <p>A SCIM 2.0 library for NodeJS, which aims to make it easier to rapidly implement services that conform to these standards</p>
+            </content-article>
+            <content-article variant="panel">
+                <a slot="title" class="status active" href="https://github.com/sleelin/ostensibly-typed" target="_blank">
+                    <h4>OstensiblyTyped</h4>
+                </a>
+                <img slot="thumb" src="https://raw.githubusercontent.com/sleelin/ostensibly-typed/d35dc94ba3aca40eb15959959e9aac012fc98c9d/assets/logo.svg" alt="OstensiblyTyped logo" />
+                <content-languages slot="tags">
+                    <li title="JavaScript">JS</li>
+                    <li title="TypeScript" value="20">TS</li>
+                </content-languages>
+                <p>Generate TypeScript type declarations for JavaScript libraries at build time, from JSDoc type annotations</p>
+            </content-article>
+            <content-article variant="panel">
+                <a slot="title" class="status active" href="https://portfolito.js.org" target="_blank">
+                    <h4>PortfoLitO</h4>
+                </a>
+                <img slot="thumb" src="https://raw.githubusercontent.com/sleelin/portfolito/f7025d621e24548cd254b24c662029dd023662da/docs/public/logo-text.svg" alt="PortfoLitO logo" />
+                <content-languages slot="tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li title="JavaScript" value="10">JS</li>
+                </content-languages>
+                <p>A Lit Web Components Library for building Software Developer Portfolio of Work Pages</p>
             </content-article>
             <content-article variant="panel">
                 <a slot="title" class="status active" href="https://github.com/scimmyjs/scimmy-routers" target="_blank">
@@ -75,8 +98,8 @@
                 </a>
                 <img slot="thumb" src="https://scimmyjs.github.io/static/assets/routers.svg" alt="SCIMMY Routers logo" />
                 <content-languages slot="tags">
-                    <li title="JS" value="95">JavaScript</li>
-                    <li title="TS" value="5">TypeScript</li>
+                    <li title="JavaScript" value="95">JS</li>
+                    <li title="TypeScript">TS</li>
                 </content-languages>
                 <p>Router middleware for express, implementing the application-level HTTP based SCIM 2.0 protocol</p>
             </content-article>
@@ -86,11 +109,11 @@
                 </a>
                 <img slot="thumb" src="https://www.sleelin.io/classy-template/static/assets/logo.svg" alt="Classy! logo" />
                 <content-languages slot="tags">
-                    <li title="JS" value="60">JavaScript</li>
-                    <li title="HTML" value="20">HTML</li>
-                    <li title="CSS" value="20">CSS</li>
+                    <li title="JavaScript" value="60">JS</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
                 </content-languages>
-                <p>A rewrite of the default JSDoc template for modern ESM-style source code.</p>
+                <p>A rewrite of the default JSDoc template for modern ESM-style source code</p>
             </content-article>
             <content-details class="span" variant="grid">
                 <u slot="summary">See More</u>
@@ -99,7 +122,7 @@
                     <h4 slot="title">
                         <a href="https://bitbucket.org/sleelin/apexify" target="_blank">Apexify</a>
                     </h4>
-                    <h5 slot="subtitle" class="status obsolete">Obsolete</h5>
+                    <content-badge slot="subtitle" variant="outline" color="red">Obsolete</content-badge>
                     <p>Translate standard HTML pages into APEX, the SalesForce VisualForce page definition language</p>
                 </content-article>
                 <content-article variant="panel">
@@ -107,7 +130,7 @@
                     <h4 slot="title">
                         <a href="https://bitbucket.org/sleelin/gulp-apexify" target="_blank">Gulp Apexify</a>
                     </h4>
-                    <h5 slot="subtitle" class="status obsolete">Obsolete</h5>
+                    <content-badge slot="subtitle" variant="outline" color="red">Obsolete</content-badge>
                     <p>Gulp plugin to translate standard HTML pages into APEX, the SalesForce VisualForce page definition language</p>
                 </content-article>
                 <content-article variant="panel">
@@ -115,7 +138,7 @@
                     <h4 slot="title">
                         <a href="https://github.com/sleelin/ngmod-utils" target="_blank">ngmod-utils</a>
                     </h4>
-                    <h5 slot="subtitle" class="status obsolete">Obsolete</h5>
+                    <content-badge slot="subtitle" variant="outline" color="red">Obsolete</content-badge>
                     <p>Utilities for parsing and manipulating streamed AngularJS 1.x source files for bundling during application builds</p>
                 </content-article>
             </content-details>
@@ -126,7 +149,8 @@
                 <h4 slot="title">Full Stack Developer</h4>
                 <h5 slot="subtitle">Independent Contractor for Fluid Legal Services Pty Ltd</h5>
                 <div slot="timestamp">2022 - Present</div>
-                <content-technologies slot="tags" variant="tile">
+                <content-topics slot="tags" variant="tile">
+                    <span slot="title">Core Technologies</span>
                     <content-badge color="green">Node.js</content-badge>
                     <content-badge color="blue">TypeScript</content-badge>
                     <content-badge color="orange">AWS</content-badge>
@@ -140,7 +164,7 @@
                     <content-badge color="green">SQL</content-badge>
                     <content-badge color="pink">DNS</content-badge>
                     <content-badge>Infrastructure as Code</content-badge>
-                </content-technologies>
+                </content-topics>
                 <p>
                     Contracting with an industry colleague and working to a strict deadline, we successfully replaced a suite of end-of-life business-critical web applications with bespoke, modern solutions.
                     Complex solution requirements included the secure collection, storage, and verification of personally identifiable information.
@@ -165,7 +189,8 @@
                 <h4 slot="title">ICT Service Desk Technician</h4>
                 <h5 slot="subtitle">SCEGGS Darlinghurst</h5>
                 <div slot="timestamp">2016 - 2020</div>
-                <content-technologies slot="tags" variant="tile">
+                <content-topics slot="tags" variant="tile">
+                    <span slot="title">Core Technologies</span>
                     <content-badge color="blue">Azure</content-badge>
                     <content-badge color="purple">PHP</content-badge>
                     <content-badge color="green">SQL</content-badge>
@@ -177,7 +202,7 @@
                     <content-badge>Enterprise Networking</content-badge>
                     <content-badge>DHCP</content-badge>
                     <content-badge>DNS</content-badge>
-                </content-technologies>
+                </content-topics>
                 <p>
                     Returning to work at the school for a second time again saw a period of large scale technological change, with the maturation of corporate cloud service providers.
                     Initial focus areas included onboarding and transition of users to Microsoft OneDrive, in place of ageing and limited on-premises backup and storage solutions.
@@ -204,7 +229,8 @@
                 <h4 slot="title">Front End Developer</h4>
                 <h5 slot="subtitle">Independent Contractor for Click to Cloud Pty Ltd</h5>
                 <div slot="timestamp">2015 - 2016</div>
-                <content-technologies slot="tags" variant="tile">
+                <content-topics slot="tags" variant="tile">
+                    <span slot="title">Core Technologies</span>
                     <content-badge color="green">Node.js</content-badge>
                     <content-badge color="yellow">JavaScript</content-badge>
                     <content-badge color="red">AngularJS</content-badge>
@@ -214,7 +240,7 @@
                     <content-badge>Git</content-badge>
                     <content-badge>APEX</content-badge>
                     <content-badge>Gulp</content-badge>
-                </content-technologies>
+                </content-topics>
                 <p>
                     Contracting for Click to Cloud's PropertyIQ project involved assembling a new front end developer toolkit for company-wide use.
                     This enabled rapid application design, iteration and development in the SalesForce platform - a previously time-consuming and manual process.
@@ -237,7 +263,8 @@
                 <h4 slot="title">Consultant Developer</h4>
                 <h5 slot="subtitle">Avoka Technologies</h5>
                 <div slot="timestamp">2012 - 2014</div>
-                <content-technologies slot="tags" variant="tile">
+                <content-topics slot="tags" variant="tile">
+                    <span slot="title">Core Technologies</span>
                     <content-badge color="green">Node.js</content-badge>
                     <content-badge color="yellow">JavaScript</content-badge>
                     <content-badge color="red">AngularJS</content-badge>
@@ -249,7 +276,7 @@
                     <content-badge>SOAP</content-badge>
                     <content-badge>XST</content-badge>
                     <content-badge>CVS</content-badge>
-                </content-technologies>
+                </content-topics>
                 <p>
                     Consulting for a wide variety of clients, including in the finance, real estate, government, and legal systems,
                     I was tasked with developing customer-facing software solutions, and integrating with long-standing existing business-critical platforms.
@@ -277,14 +304,15 @@
                 <h4 slot="title">ICT Support Assistant</h4>
                 <h5 slot="subtitle">SCEGGS Darlinghurst</h5>
                 <div slot="timestamp">2007 - 2012</div>
-                <content-technologies slot="tags" variant="tile">
+                <content-topics slot="tags" variant="tile">
+                    <span slot="title">Core Technologies</span>
                     <content-badge color="red">Novell</content-badge>
                     <content-badge color="yellow">Netware</content-badge>
                     <content-badge color="cyan">Groupwise</content-badge>
                     <content-badge color="orange">Active Directory</content-badge>
                     <content-badge color="blue">Microsoft Exchange</content-badge>
                     <content-badge>Enterprise Networking</content-badge>
-                </content-technologies>
+                </content-topics>
                 <p>
                     Initially working part-time whilst studying, then moving to full-time, I witnessed and assisted with major changes in the technology landscape of the school.
                     This began with business-wide migrations from Novell Netware and Groupwise platforms to Microsoft Active Directory and Exchange Server.

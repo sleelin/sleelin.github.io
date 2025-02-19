@@ -165,6 +165,10 @@ page-main {
   --container-fgColor: var(--color-page-foreground);
   --container-fgColor-sm: var(--color-page-background);
   
+  content-hero::part(content) {
+    text-align: center;
+  }
+  
   content-section {
     scroll-margin-top: var(--page-header-offset-min);
     --title-textColor: var(--color-page-heading);
@@ -182,7 +186,7 @@ page-main {
         --container-bgColor: var(--color-content-foreground);
       }
       
-      content-technologies {
+      content-topics {
         --container-bgColor: transparent;
         --container-textColor: var(--color-primary);
         --container-borderColor: var(--color-primary);
@@ -227,9 +231,15 @@ page-main {
     --container-outlineColor: var(--color-border);
   }
   
+  content-badge {
+    font-size: 0.675em;
+    margin-bottom: 0;
+  }
+  
   img {
     transition: transform 0.2s ease-in-out;
     transform-origin: center;
+    height: 100%;
   }
   
   a {
@@ -278,7 +288,7 @@ page-main {
       padding: 8px 24px 4px;
     }
     
-    content-technologies {
+    content-topics {
       margin: 0 -16px;
       
       &::part(title) {
@@ -293,7 +303,7 @@ page-main {
       padding: 8px 0 4px;
     }
     
-    content-technologies {
+    content-topics {
       display: none;
     }
   }

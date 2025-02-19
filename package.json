@@ -9,14 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@sleelin/portfolito": "sleelin/portfolito",
+    "portfolito": "^1.0.0",
     "dark-mode-toggle": "^0.15.0",
     "lit": "^3.1.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.23.6",
     "@babel/preset-env": "^7.23.6",
-    "vite": "^5.1.4",
-    "vite-plugin-babel": "^1.2.0"
+    "vite": "^6.1.0",
+    "vite-plugin-babel": "^1.3.0"
   }
 }
